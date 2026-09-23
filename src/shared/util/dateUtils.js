@@ -1,1 +1,7 @@
-export const MAPPING_CONTROLLER_CLIENTE = '/api/cliente'
+export function formatarData(data) {
+    if (!data) return "";
+
+    const [ano, mes, dia] = data.split("-");
+
+    return `${dia}/${mes}/${ano}`;
+}
