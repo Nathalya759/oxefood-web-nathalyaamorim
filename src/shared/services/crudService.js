@@ -12,4 +12,4 @@ export async function listar(controller) {
 export async function cadastrar(controller, objeto) {
     const response = await api.post(controller, objeto);
     return response.data;
-}
+} 
